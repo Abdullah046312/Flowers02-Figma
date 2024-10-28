@@ -1,0 +1,85 @@
+#banner_main {
+    background-color: rgba(229, 84, 115, 0.075);
+    background-image: url(../../../assets/images.png);
+    height: 800px; /* You can change this if needed */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.048);
+    display: flex; /* Flexbox for centering content */
+    padding: 120px 0px;
+    
+}
+
+.one {
+    padding: 20px; /* Reduced padding for smaller screens */
+    max-width: 800px; /* Limit width for better readability */
+}
+
+.one h2 {
+    font-size: 4rem; /* Responsive size */
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
+}
+
+.one p {
+    font-size: 1.2rem; /* Responsive size */
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    color: rgba(255, 255, 255, 0.753);
+    margin-top: 20px;
+}
+
+.one button {
+    font-size: 1.25rem; /* Responsive size */
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+    color: #FFFF;
+    padding: 10px 30px;
+    background-color: #E55473;
+    border: none;
+    margin-top: 20px;
+    transition: background-color 0.5s;
+    border-radius: 8px;
+}
+
+.one button:hover {
+    background-color: #FABC3F;
+}
+
+.two img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .one h2 {
+        font-size: 3rem; /* Smaller heading on tablets */
+    }
+    
+    .one p {
+        font-size: 1rem; /* Smaller text on tablets */
+    }
+    
+    .one button {
+        font-size: 1rem; /* Smaller button text */
+        padding: 8px 20px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .one h2 {
+        font-size: 2.5rem; /* Smaller heading on mobile */
+    }
+    
+    .one p {
+        font-size: 0.9rem; /* Smaller text on mobile */
+    }
+    
+    .one button {
+        font-size: 0.9rem; /* Smaller button text */
+        padding: 6px 15px; /* Adjust button padding */
+    }
+}

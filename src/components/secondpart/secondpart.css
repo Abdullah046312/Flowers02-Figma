@@ -1,0 +1,53 @@
+.six{
+   
+    text-align: center;
+ }
+ .six img{
+    height: 400px;
+    /* width: 400px; */
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    border-radius: 50px;
+ }
+ 
+ .six h2{
+     font-size: 24px;
+     font-weight: 800;
+     font-family: "Lato", sans-serif;
+     color: #272727;
+     margin-top: 20px;
+ }
+ .six p{
+     font-size: 20px;
+     font-weight: 800;
+     font-family: "Lato", sans-serif;
+     color: #E55473;
+     padding-bottom: 120px;
+ }
+
+ /*  */
+ .six {
+    perspective: 1000px; /* Enable 3D perspective */
+  }
+  
+  .six-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Preserve 3D effect */
+  }
+  
+  .six:hover .six-inner {
+    transform: rotateY(180deg); /* Flip effect */
+  }
+  
+  .six img {
+    width: 100%;
+  }
+  
+ 
+ 

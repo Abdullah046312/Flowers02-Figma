@@ -1,0 +1,100 @@
+.eight {
+    background-color: bisque;
+    padding: 60px 20px; /* Adjusted padding for smaller screens */
+    display: flex;
+    justify-content: space-around; /* Adjust spacing for better responsiveness */
+    border-radius: 12px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.seven {
+    text-align: center;
+    margin: 40px 20px; /* Adjusted margins for better spacing */
+}
+
+.seven h2 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Ephesis", cursive;
+    color: #E55473;
+}
+
+.seven h3 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+    color: #272727;
+    margin-top: 20px;
+}
+
+.seven p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    color: rgba(39, 39, 39, 0.603);
+}
+
+.seven button {
+    padding: 10px 25px;
+    background-color: #ff66003b;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+    color: #E55473;
+    border: 1px solid #E55473;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+.seven button:hover {
+    background-color: #FEEE91;
+}
+
+.nine img {
+    width: 100%; /* Make image responsive */
+    max-width: 300px; /* Optional: limit the max size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .eight {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .seven h2, .seven h3 {
+        font-size: 32px; /* Smaller heading sizes */
+    }
+
+    .seven p {
+        font-size: 16px; /* Smaller paragraph size */
+    }
+
+    .seven button {
+        font-size: 18px; /* Smaller button text */
+    }
+
+    .nine img {
+        width: 80%; /* Adjust image size on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .eight {
+        padding: 40px 10px; /* Adjust padding for mobile */
+    }
+
+    .seven h2, .seven h3 {
+        font-size: 28px; /* Further reduce heading sizes */
+    }
+
+    .seven p {
+        font-size: 14px; /* Further reduce paragraph size */
+    }
+
+    .seven button {
+        font-size: 16px; /* Further reduce button text */
+        padding: 8px 20px; /* Adjust button padding */
+    }
+}
